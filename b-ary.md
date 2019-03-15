@@ -1,8 +1,3 @@
----
-
-
----
-
 <h1 id="count-trailing-zeros-in-b-ary-in-the-baseradix-of-b-representation-of-n">Count trailing zeros in b-ary (in the base/radix of b) representation of n!</h1>
 <h3 id="given-two-integers-n-and-b-write-a-function-that-returns-the-count-of-trailing-zeroes-in-b-ary-representation-of-n">Given two integers n and b, write a function that returns the count of trailing zeroes in b-ary representation of n!</h3>
 <p><strong>Examples:</strong></p>
