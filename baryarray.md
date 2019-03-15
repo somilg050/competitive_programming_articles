@@ -19,16 +19,16 @@ But this method cause overflow for even n = 100 as
 
 Better Approach:
 
-
-$$S(n) = \sum_{k\geq1} \left\lfloor  \frac{n}{p^k} \right\rfloor$$ 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$$S(n)&space;=&space;\sum_{k\geq1}&space;\left\lfloor&space;\frac{n}{p^k}&space;\right\rfloor$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$$S(n)&space;=&space;\sum_{k\geq1}&space;\left\lfloor&space;\frac{n}{p^k}&space;\right\rfloor$$" title="$$S(n) = \sum_{k\geq1} \left\lfloor \frac{n}{p^k} \right\rfloor$$" /></a> 
 
 S(n) calculate number of factors of p in n!
 
 Now Divide S by m to get a quotient Q and a remainder R: S = mQ + R. Then
 
 
-$$Q = \left\lfloor \frac{S(n)}{m} \right\rfloor$$
-$$Z(n) = min \left\{ \left\lfloor \frac{S(n)}{m} \right\rfloor \right\}$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=$$Q&space;=&space;\left\lfloor&space;\frac{S(n)}{m}&space;\right\rfloor$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$$Q&space;=&space;\left\lfloor&space;\frac{S(n)}{m}&space;\right\rfloor$$" title="$$Q = \left\lfloor \frac{S(n)}{m} \right\rfloor$$" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=$$Z(n)&space;=&space;min&space;\left\{&space;\left\lfloor&space;\frac{S(n)}{m}&space;\right\rfloor&space;\right\}$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$$Z(n)&space;=&space;min&space;\left\{&space;\left\lfloor&space;\frac{S(n)}{m}&space;\right\rfloor&space;\right\}$$" title="$$Z(n) = min \left\{ \left\lfloor \frac{S(n)}{m} \right\rfloor \right\}$$" /></a>
 
 
 
