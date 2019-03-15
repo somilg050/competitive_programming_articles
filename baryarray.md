@@ -21,7 +21,7 @@ But this method cause overflow for even n = 100 as
 **Approach:**
 [Tex]
 $$S(n) = \sum_{k\geq1} \left\lfloor  \frac{n}{p^k} \right\rfloor$$ 
-[\Tex]
+[/Tex]
 S(n) calculate number of factors of p in n!
 
 Now Divide S by m to get a quotient Q and a remainder R: S = mQ + R. Then
