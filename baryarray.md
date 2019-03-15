@@ -19,16 +19,16 @@ But this method cause overflow for even n = 100 as
 (100! = 933262154439441526816992......) which is pretty large so it's impossible doing given problem using this method.
 
 **Approach:**
-[Tex]
+```math
 $$S(n) = \sum_{k\geq1} \left\lfloor  \frac{n}{p^k} \right\rfloor$$ 
-[/Tex]
+```
 S(n) calculate number of factors of p in n!
 
 Now Divide S by m to get a quotient Q and a remainder R: S = mQ + R. Then
-
+```math
 $$Q = \left\lfloor \frac{S(n)}{m} \right\rfloor$$
 $$Z(n) = min \left\{ \left\lfloor \frac{S(n)}{m} \right\rfloor \right\}$$
-
+```
 Following is the program based on the above formula
 
 ```c++
