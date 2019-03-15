@@ -1,9 +1,7 @@
 # Count trailing zeros in b-ary (in the base/radix of b) representation of n!
-
 ### Given two integers n and b, write a function that returns the count of trailing zeroes in b-ary representation of n!
 
 **Examples:**
-
 <pre>
 <strong>Input : n = 5 and b = 2</strong> 
 <strong>Output : 3</strong>
@@ -14,22 +12,29 @@
 6! = 720(10) = 880(9) having 1 trailing zeroes
 </pre>
 
+
 A simple method is to first calculate factorial of n and then convert that number in base b radix and count number of trailing zeroes in the result.
 But this method cause overflow for even n = 100 as 
-(100! = 933262154439441526816992......) which is pretty large so it's impossible doing given problem using this method.
+(100! = 9332621544394415268169......) which is pretty large so it's impossible doing given problem using this method.
 
-**Approach:**
-$S(n) = \sum_{k\geq1} \left\lfloor  \frac{n}{p^k} \right\rfloor$
+Better Approach:
+
+
+$$S(n) = \sum_{k\geq1} \left\lfloor  \frac{n}{p^k} \right\rfloor$$ 
+
 S(n) calculate number of factors of p in n!
 
 Now Divide S by m to get a quotient Q and a remainder R: S = mQ + R. Then
 
-$Q = \left\lfloor \frac{S(n)}{m} \right\rfloor$
-$Z(n) = min \left\{ \left\lfloor \frac{S(n)}{m} \right\rfloor \right\}$
-```
+
+$$Q = \left\lfloor \frac{S(n)}{m} \right\rfloor$$
+$$Z(n) = min \left\{ \left\lfloor \frac{S(n)}{m} \right\rfloor \right\}$$
+
+
+
 Following is the program based on the above formula
 
-```c++
+```cpp
 // Program to find trailing zeroes
 // in b-ary representation of n!
 
