@@ -1,4 +1,4 @@
-# Publications
+# Competitive-Programming-Articles-Repository
 ## This repository contain following articles:
  
 * Represent a given positive integer n as a sum of as many pairwise distinct positive integers.
